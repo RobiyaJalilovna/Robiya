@@ -12,13 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',  # Token avtorizatsiyasi
-        'rest_framework.authentication.SessionAuthentication',  # Session avtorizatsiyasi
-        # Boshqa avtorizatsiya usullarini qo'shishingiz mumkin
-    ],
-}
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
